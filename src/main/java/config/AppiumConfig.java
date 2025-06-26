@@ -45,8 +45,8 @@ public class AppiumConfig {
         }
     }
 
-    @AfterMethod(enabled = false)
+    @AfterMethod()
     public void tearDown(){
-        driver.quit();
+        //driver.quit();
     }
 }
