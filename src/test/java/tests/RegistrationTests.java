@@ -16,8 +16,8 @@ public class RegistrationTests extends AppiumConfig {
     public void registrationPositiveTest(){
         int i = new Random().nextInt(1000);
         RegistrationBodyDto user = RegistrationBodyDto.builder()
-                .firstname(i+"Rita")
-                .lastname(i+"Fanny")
+                .firstName(i+"Rita")
+                .lastName(i+"Fanny")
                 .username(i+"rita_family@gmail.com")
                 .password("Qwerty123!")
                 .build();
@@ -37,8 +37,8 @@ public class RegistrationTests extends AppiumConfig {
     public void registrationNegativeTest_WOCheckBox(){
         int i = new Random().nextInt(1000);
         RegistrationBodyDto user = RegistrationBodyDto.builder()
-                .firstname(i+"Rita")
-                .lastname(i+"Fanny")
+                .firstName(i+"Rita")
+                .lastName(i+"Fanny")
                 .username(i+"rita_family@gmail.com")
                 .password("Qwerty123!")
                 .build();
@@ -58,8 +58,8 @@ public class RegistrationTests extends AppiumConfig {
     public void registrationNegativeTest_WrongEmail(){
         int i = new Random().nextInt(1000);
         RegistrationBodyDto user = RegistrationBodyDto.builder()
-                .firstname(i+"Rita")
-                .lastname(i+"Fanny")
+                .firstName(i+"Rita")
+                .firstName(i+"Fanny")
                 .username(i+"rita_familygmail.com")
                 .password("Qwerty123!")
                 .build();
